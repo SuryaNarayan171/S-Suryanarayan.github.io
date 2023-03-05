@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Feedback Form</title>
+    <style media="screen">
+        body {
+            background-color: rgb(215, 250, 249);
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: left;
+        }
+
+
+        .rating>input {
+            display: none;
+        }
+
+        .rating>label {
+            position: relative;
+            width: 1em;
+            font-size: 50px;
+            color: #1ea6be;
+        }
+
+        .rating>label::before {
+            content: "\2605";
+            position: absolute;
+            opacity: 0;
+        }
+
+        .rating>label:hover:before,
+        .rating>label:hover~label:before {
+            opacity: 1 !important;
+        }
+
+        .rating>input:checked~label:before {
+            opacity: 1;
+        }
+
+        .rating:hover>input:checked~label:before {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Instructor Feedback Form</h1>
+    <div style="padding-bottom: 18px;font-size : 18px;text-align: center;">Swaminathan Sir<br>
+        FSD<br>
+    </div>
+    <hr>
+    <div style="padding-bottom: 18px;font-size : 18px;"><b>Please help us improve our faculties by filling out this
+            form.</b>
+    </div>
+    <form action="Thanks.html" method="post">
+        <p>
+            <label for="Name">Name: </label>
+            <input id="Name" type="text" placeholder="Enter name here" name="name" required>
+        </p>
+        <p>
+            <label for="num">Sem: </label>
+            <input id="num" type="number" placeholder="Age" name="num" min="1" max="100" step="1" required>
+        </p>
+        <p>
+            <label for="telNo">Phone number: </label>
+            <input id="telNo" name="telNo" type="tel" placeholder="+911234567890" required>
+        </p>
+        <p>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" size="30" required placeholder="example1@example.com"> required
+        </p>
+        <p>
+            <label for="reserve">Which class do you prefer? </label>
+            &ensp;<label for="ta">Online or Offline</label>
+            <input type="radio" name="res" id="ta" value="agency">
+            <label for="onl">Online</label>
+            <input type="radio" name="res" id="onl" value="online">
+            <label for="ot">Offline</label>
+            <input type="radio" name="res" id="off" value="offline">
+        </p>
+        <p>
+            <label id="label_11" for="input_11"> How would you rate
+                these: </label>
+        <div id="cid_11" data-layout="full">
+            <table summary="" aria-labelledby="label_11" cellpadding="4" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th scope="col">
+                            <label id="label_11_col_0">Poor</label>
+                        </th>
+                        <th scope="col">
+                            <label id="label_11_col_1">Satisfactory </label>
+                        </th>
+                        <th scope="col">
+                            <label id="label_11_col_2">Good</label>
+                        </th>
+                        <th scope="col">
+                            <label id="label_11_col_3">Very Good</label>
+                        </th>
+                        <th scope="col">
+                            <label id="label_11_col_4">Excellent </label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label id="label_11_row_0">Lecture Speed
+                                Quality</label></th>
+                        <td><input type="radio" id="input_11_0_0" name="q11_howWould[0]" value="Poor"><label
+                                for="input_11_0_0"></label></td>
+                        <td><input type="radio" id="input_11_0_1" name="q11_howWould[0]" value="Satisfactory "><label
+                                for="input_11_0_1"></label></td>
+                        <td><input type="radio" id="input_11_0_2" name="q11_howWould[0]" value="Good"><label
+                                for="input_11_0_2"></label></td>
+                        <td><input type="radio" id="input_11_0_3" name="q11_howWould[0]" value="Very Good"><label
+                                for="input_11_0_3"></label></td>
+                        <td><input type="radio" id="input_11_0_4" name="q11_howWould[0]" value="Excellent "><label
+                                for="input_11_0_4"></label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label id="label_11_row_1">Understanding</label></th>
+                        <td><input type="radio" id="input_11_1_0" name="q11_howWould[1]" value="Poor"><label
+                                for="input_11_1_0"></label></td>
+                        <td><input type="radio" id="input_11_1_1" name="q11_howWould[1]" value="Satisfactory "><label
+                                for="input_11_1_1"></label></td>
+                        <td><input type="radio" id="input_11_1_2" name="q11_howWould[1]" value="Good"><label
+                                for="input_11_1_2"></label></td>
+                        <td><input type="radio" id="input_11_1_3" name="q11_howWould[1]" value="Very Good"><label
+                                for="input_11_1_3"></label></td>
+                        <td><input type="radio" id="input_11_1_4" name="q11_howWould[1]" value="Excellent "><label
+                                for="input_11_1_4"></label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label id="label_11_row_2">Sincereity</label></th>
+                        <td><input type="radio" id="input_11_2_0" name="q11_howWould[2]" value="Poor"><label
+                                for="input_11_2_0"></label></td>
+                        <td><input type="radio" id="input_11_2_1" name="q11_howWould[2]" value="Satisfactory "><label
+                                for="input_11_2_1"></label></td>
+                        <td><input type="radio" id="input_11_2_2" name="q11_howWould[2]" value="Good"><label
+                                for="input_11_2_2"></label></td>
+                        <td><input type="radio" id="input_11_2_3" name="q11_howWould[2]" value="Very Good"><label
+                                for="input_11_2_3"></label></td>
+                        <td><input type="radio" id="input_11_2_4" name="q11_howWould[2]" value="Excellent "><label
+                                for="input_11_2_4"></label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label id="label_11_row_3">Course Completion</label></th>
+                        <td><input type="radio" id="input_11_3_0" name="q11_howWould[3]" value="Poor"><label
+                                for="input_11_3_0"></label></td>
+                        <td><input type="radio" id="input_11_3_1" name="q11_howWould[3]" value="Satisfactory "><label
+                                for="input_11_3_1"></label></td>
+                        <td><input type="radio" id="input_11_3_2" name="q11_howWould[3]" value="Good"><label
+                                for="input_11_3_2"></label></td>
+                        <td><input type="radio" id="input_11_3_3" name="q11_howWould[3]" value="Very Good"><label
+                                for="input_11_3_3"></label></td>
+                        <td><input type="radio" id="input_11_3_4" name="q11_howWould[3]" value="Excellent "><label
+                                for="input_11_3_4"></label></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>
+            <label for="revisit">Would  you like this faculty to be your instructor again?&ensp; </label>
+            <select name="rev" id="revist">
+                <option value="">--Please choose an option--</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </p>
+        <p>
+            <label for="avatar">Upload a file:</label>
+            <input type="file" id="avatar" name="avatar" accept=".jpg, .jpeg, .png,.doc,.docx,.pdf">
+        </p>
+        <p>
+            <label for="star">Overall Rating? </label>
+        <div class="rating">
+            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+        </div>
+        </p>
+        <p>
+            <label for="req">Any other suggestions for us?</label><br>
+            <br>
+            <textarea name="suggestions" id="req" cols="50" rows="10" placeholder="Type here......."></textarea>
+        </p>
+        <p>
+            <label for="file">Form progress:</label>
+            <progress id="file" max="100" value="59"> 59% </progress>
+        </p>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
+    
