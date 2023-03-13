@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #F5F5F5;
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 50px;
+			color: #555;
+		}
+
+		#game-board {
+			margin: 50px auto;
+			border: 5px solid #555;
+			border-collapse: collapse;
+		}
+
+		#game-board td {
+			width: 100px;
+			height: 100px;
+			font-size: 72px;
+			font-weight: bold;
+			text-align: center;
+			vertical-align: middle;
+			border: 1px solid #555;
+			cursor: pointer;
+		}
+
+		#game-board td:hover {
+			background-color: #EEE;
+		}
+
+		#game-board td:active {
+			background-color: #DDD;
+		}
+
+		#message {
+			margin-top: 30px;
+			font-size: 24px;
+			color: #555;
+		}
+
+		#single-player {
+			margin-top: 20px;
+		}
+
+		#single-player label {
+			margin-right: 10px;
+			font-size: 18px;
+			color: #555;
+		}
+
+		#single-player input {
+			margin-right: 10px;
+			cursor: pointer;
+		}
+
+		#restart {
+			margin-top: 30px;
+			padding: 10px;
+			background-color: #555;
+			color: #FFF;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		#restart:hover {
+			background-color: #333;
+		}
+	</style>
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+	<table id="game-board">
+		<tr>
+			<td id="cell-0"></td>
+			<td id="cell-1"></td>
+			<td id="cell-2"></td>
+		</tr>
+		<tr>
+			<td id="cell-3"></td>
+			<td id="cell-4"></td>
+			<td id="cell-5"></td>
+		</tr>
+		<tr>
+			<td id="cell-6"></td>
+			<td id="cell-7"></td>
+			<td id="cell-8"></td>
+		</tr>
+	</table>
+	<div id="message"></div>
+	<div id="single-player">
+		<label for="ai-player">Single Player:</label>
+		<input type="checkbox" id="ai-player" checked>
+	</div>
+	<button id="restart">Restart</button>
+
+	<script src="script.js"></script>
+</body>
+</html>

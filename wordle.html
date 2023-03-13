@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wordle Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Wordle Game</h1>
+		<div id="word-container">
+			<div id="word"></div>
+		</div>
+		<div id="guess-container">
+			<label for="guess">Guess:</label>
+			<input type="text" id="guess" maxlength="5">
+			<button id="submit" onclick="submitGuess()">Submit</button>
+			<p id="message"></p>
+		</div>
+	</div>
+	<script src="scriptW.js"></script>
+</body>
+</html>
+
