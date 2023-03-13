@@ -59,9 +59,11 @@ function cellClicked() {
 	if (checkWin()) {
 		gameOver = true;
 		message.textContent = currentPlayer + ' wins!';
+		alert(currentPlayer + ' wins!')
 	} else if (checkTie()) {
 		gameOver = true;
 		message.textContent = 'Tie game!';
+		alert("Tie Game")
 	} else {
 		// Switch to the next player
 		currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
@@ -153,9 +155,11 @@ function checkWin() {
 	if (checkWin()) {
 		gameOver = true;
 		message.textContent = aiPlayer + ' wins!';
+		alert(aiPlayer + ' wins!')
 	} else if (checkTie()) {
 		gameOver = true;
 		message.textContent = 'Tie game!';
+		alert("Tie Game")
 	} else {
 		// Switch to the human player
 		currentPlayer = 'X';
